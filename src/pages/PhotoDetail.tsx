@@ -5,9 +5,9 @@ import {fetchPhotos} from "../requests";
 
 export const PhotoDetail = () => {
   const {photoId} = useParams();
-  console.log(`photoDetail - ${photoId}`)
-  const {data} = useQuery([FetchData.FetchPhotos, photoId], () => fetchPhotos({id: parseInt(photoId || "")}));
-  return <div>PhotoDetail
+  const {data, isLoading} = useQuery([FetchData.FetchPhotos, photoId], () => fetchPhotos({id: parseInt(photoId || "")}));
+  return <div>
+    {isLoading && <p>Loading Photos ... </p>}
     <img src={data?.data[0].url}/>
   </div>
 }

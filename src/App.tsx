@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
+import 'mapbox-gl/dist/mapbox-gl.css';
 import { Users } from "./pages/Users";
 import { Albums } from "./pages/Albums";
 import { Posts } from "./pages/Posts";
@@ -24,19 +25,19 @@ const Header = () => {
           {/*<NavLink className="linkFont" to="/">*/}
           {/*  Home*/}
           {/*</NavLink>*/}
-          <NavLink className="linkFont" to="users">
+          <NavLink className="linkFont bigFont" to="users">
             User
           </NavLink>
-          <NavLink className="linkFont" to="albums">
+          <NavLink className="linkFont bigFont" to="albums">
             Albums
           </NavLink>
-          <NavLink className="linkFont" to="photos">
+          <NavLink className="linkFont bigFont" to="photos">
             Photos
           </NavLink>
-          <NavLink className="linkFont" to="posts">
+          <NavLink className="linkFont bigFont" to="posts">
             Posts
           </NavLink>
-          <NavLink className="linkFont" to="todos">
+          <NavLink className="linkFont bigFont" to="todos">
             Todos
           </NavLink>
         </div>
@@ -48,7 +49,7 @@ const Header = () => {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <div>
+      <div className="main">
         <Router>
           <Header />
           {/*<Router>*/}
@@ -79,15 +80,16 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <div className="content">
-          <Routes>
-            <Route path="users/*" element={<Users />} />
-            <Route path="albums/*" element={<Albums />} />
-            <Route path="photos/*" element={<Photos />} />
-            <Route path="posts/*" element={<Posts />} />
-            <Route path="todos/*" element={<Todos />} />
-            {/*<Route path="/" element={<App/>}/>*/}
-          </Routes>
-          </div>
+              <Routes>
+                <Route index element={<Users/>}/>
+                <Route path="users/*" element={<Users />} />
+                <Route path="albums/*" element={<Albums />} />
+                <Route path="photos/*" element={<Photos />} />
+                <Route path="posts/*" element={<Posts />} />
+                <Route path="todos/*" element={<Todos />} />
+                {/*<Route path="/" element={<App/>}/>*/}
+              </Routes>
+            </div>
         </Router>
       </div>
     </QueryClientProvider>

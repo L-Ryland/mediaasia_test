@@ -8,16 +8,15 @@ import { fetchUsers } from "../requests";
 export const Users = () => {
   const { data, isLoading, isSuccess } = useQuery(
     FetchData.FetchUsers,
-    fetchUsers
+    () => fetchUsers()
   );
-  console.log(`[users] `, data);
   return (
     <div className="detailOuter">
       {isLoading && <p>Loading User</p>}
       {isSuccess && (
         <div className="index">
           {data.data.map((user) => (
-            <Link key={user.id} to={user.id.toString()}>
+            <Link className="linkFont" key={user.id} to={user.id.toString()}>
               <p>
                 {user.id} - {user.name}
               </p>

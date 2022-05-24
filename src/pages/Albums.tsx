@@ -16,14 +16,14 @@ export const Albums = () => {
       {isSuccess && (
         <div className="index">
           {data.data.map((album) => (
-            <Link key={album.id} to={album.id.toString()}>
+            <Link className="linkFont" key={album.id} to={album.id.toString()}>
               <p>{album.id} - {album.title}</p>
             </Link>
           ))}
         </div>
       )}
       <div className="detail">
-        <Link to=":albumId/photo_detail">DetailedPhoto</Link>
+        <Link className="linkFont" to=":albumId/photo_detail" hidden>DetailedPhoto</Link>
         <Routes>
           <Route path=":albumId" element={<AlbumDetail />} />
           <Route path=":albumId/photo_detail/:photoId" element={<PhotoDetail/>}/>

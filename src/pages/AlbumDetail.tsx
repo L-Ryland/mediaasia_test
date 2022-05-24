@@ -19,7 +19,6 @@ export const AlbumDetail = () => {
   }, [paramAlbumId]);
   // console.log(`albumPhotos - `, albumPhotos);
   const handleClick = (id: number) => {
-    // navigate(-1);
     navigate(`photo_detail/${id}`);
   }
   return (

@@ -39,6 +39,7 @@
 
 .headerTitle {
   /* Auto layout */
+  color: #FFF;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,7 +69,6 @@
 
   width: 448px;
   height: 34px;
-
   /* Inside auto layout */
   flex: none;
   order: 0;
@@ -79,18 +79,21 @@
   /* Title1 · Bold */
   font-style: normal;
   /*font-weight: 700;*/
-  font-size: 28px;
-  line-height: 34px;
-  /* identical to box height, or 121% */
-  text-align: center;
 
   /* 🌝 System / White */
-  color: #FFFFFF;
+  color: #000;
 
 
   /* Inside auto layout */
   order: 0;
   flex-grow: 0;
+}
+.bigFont {
+  font-size: 28px;
+  line-height: 34px;
+  /* identical to box height, or 121% */
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .header {
@@ -110,13 +113,13 @@
   background: #007AFF;
 }
 
+.main {
+  margin: auto;
+  width: 1338px;
+}
 .content {
-  position: absolute;
   width: 1338px;
   height: 815px;
-  left: 51px;
-  top: 138px;
-
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -126,15 +129,18 @@
   flex-direction: row;
 }
 .index {
-  /*height: 815px;*/
+  height: 750px;
   flex: 1;
   justify-self: flex-start;
+  padding: 32px;
+  overflow: auto;
 }
 
 .detail {
-  /*height: 815px;*/
+  height: 814px;
   flex: 2;
   justify-self: flex-end;
+  overflow: auto;
 }
 
 .albumDetailText {

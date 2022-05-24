@@ -1,6 +1,7 @@
 export enum FetchData {
   FetchUsers = 'fetchUsers',
   FetchPosts = 'fetchPost',
+  FetchComments = 'fetchComments',
   FetchAlbums = 'fetchAlbums',
   FetchPhotos = 'fetchPhotos',
   FetchTodos = 'fetchTodos',
@@ -70,4 +71,18 @@ export interface Post {
   id:     number;
   title:  string;
   body:   string;
+}
+export interface Comment {
+  postId: number;
+  id:     number;
+  name:   string;
+  email:  string;
+  body:   string;
+}
+
+export interface ExtraQueryKey<T=unknown> {
+  _order?: "asc" | "desc";
+  _sort?: keyof T;
+  _limit?: number;
+  _page?: number
 }
