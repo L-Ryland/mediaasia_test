@@ -46,7 +46,7 @@ export const UserDetail = () => {
   }
   return (
     <div>
-      UserDetail
+      <h2>{userInfo && `${userInfo.name}'s `}Profile</h2>
       {isLoading && <p>Loading user profile...</p>}
       {userInfo && (
         <div>

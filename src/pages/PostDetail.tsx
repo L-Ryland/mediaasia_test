@@ -28,10 +28,9 @@ export const PostDetail = () => {
   const navigateToUser = (id?: number) => {
     if (id) navigate(`/users/${id}`);
   };
-  console.log("multiavator", multiavatar("Ryland Lewes"));
+  // console.log("multiavator", multiavatar("Ryland Lewes"));
   return (
     <div>
-      PostDetail
       {isLoadingPost && <p>Loading post details....</p>}
       {currentPost && (
         <div>
@@ -60,7 +59,7 @@ export const PostDetail = () => {
             {isLoadingComments && <p>Loading Comments</p>}
             {comments &&
               comments.data.map((comment) => (
-                <div>
+                <div key={comment.id}>
                   {/*<div className="post subheader">{comment.email}</div>*/}
                   <div className="post subheader">
                     <div

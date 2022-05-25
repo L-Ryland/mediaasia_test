@@ -9,7 +9,7 @@ import React from "react";
 const TodosByUser: React.FC<{ todos: Todo[] | undefined }> = ({todos}) => {
   const { data: users } = useQuery(FetchData.FetchUsers, () => fetchUsers());
   return (
-    <ul className="index">
+    <ul>
       {users && users.data.map((user) => (
         <div key={user.id}>
           <p>{user.name}'s Todos</p>
@@ -27,7 +27,7 @@ const TodosByUser: React.FC<{ todos: Todo[] | undefined }> = ({todos}) => {
   )
 };
 const BriefTodos: React.FC<{ todos: Todo[] | undefined }> = ({ todos }) => (
-  <ul className="index">
+  <ul>
     {todos?.map((todo) => (
       // <Link key={todo.id} to={todo.id.toString()}>
         <li key={todo.id} className={todo.completed ? "done" : ""}>
@@ -38,7 +38,6 @@ const BriefTodos: React.FC<{ todos: Todo[] | undefined }> = ({ todos }) => (
   </ul>
 );
 export const Todos = () => {
-  const navigate = useNavigate();
   const {
     data: todos,
     isLoading,
@@ -50,7 +49,7 @@ export const Todos = () => {
     ({ completed }) => completed === false
   );
   return (
-    <div>
+    <div className="index">
       <div className="todo tab">
         <NavLink
           to="/todos"

@@ -23,6 +23,7 @@ export const AlbumDetail = () => {
   }
   return (
     <div>
+      <h2>Albums</h2>
       {albumPhotos &&
         albumPhotos.map((photo) => (
           <div className="albumDetailContent" key={photo.id} onClick={() => handleClick(photo.id)}>

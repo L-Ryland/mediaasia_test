@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router, Link,
+  BrowserRouter as Router, Link, Navigate,
   NavLink,
   Route,
   Routes,
@@ -52,36 +52,9 @@ function App() {
       <div className="main">
         <Router>
           <Header />
-          {/*<Router>*/}
-          {/*  <div>*/}
-          {/*<nav>*/}
-          {/*  <ul>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="/">Home</NavLink>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="users">User List</NavLink>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="albums">Albums List</NavLink>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="photos">Photos List</NavLink>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="posts">Posts List</NavLink>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <NavLink to="todos">Todos List</NavLink>*/}
-          {/*    </li>*/}
-          {/*  </ul>*/}
-          {/*</nav>*/}
-
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
           <div className="content">
               <Routes>
-                <Route index element={<Users/>}/>
+                <Route index element={<Navigate to="users"/>}/>
                 <Route path="users/*" element={<Users />} />
                 <Route path="albums/*" element={<Albums />} />
                 <Route path="photos/*" element={<Photos />} />

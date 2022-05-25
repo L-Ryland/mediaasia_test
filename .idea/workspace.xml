@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd8a4a9-e3d5-4a51-a547-f1eb8b141950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/setupProxy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Photo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/PostsDetail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Todos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AlbumDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AlbumDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Albums.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Albums.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/PhotoDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PhotoDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Photos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Photos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/PostDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/PostDetail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Posts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Todos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Todos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UserDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/requests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/requests.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653307747517</updated>
-      <workItem from="1653307749611" duration="52944000" />
+      <workItem from="1653307749611" duration="69830000" />
     </task>
     <servers />
   </component>

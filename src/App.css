@@ -138,7 +138,8 @@
 
 .detail {
   height: 814px;
-  flex: 2;
+  margin-left: 20px;
+  flex: 3;
   justify-self: flex-end;
   overflow: auto;
 }
@@ -153,8 +154,12 @@
 .albumDetailContent {
   flex-direction: row;
   gap: 15px;
-  float: right;
+  float: left;
   width: 160px;
   padding-bottom: 20px;
   height: 200px;
+}
+.chart{
+  margin: 20px;
+  height: 600px;
 }
